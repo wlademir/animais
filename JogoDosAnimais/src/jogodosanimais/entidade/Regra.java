@@ -6,7 +6,7 @@
 package jogodosanimais.entidade;
 
 import javax.swing.JOptionPane;
-import jogodosanimais.view.Tela;
+import jogodosanimais.tela.Tela;
 
 /**
  *

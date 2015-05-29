@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jogodosanimais.view;
+package jogodosanimais.tela;
 
 import javax.swing.JOptionPane;
 
