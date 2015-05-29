@@ -6,7 +6,8 @@
 package jogodosanimais;
 
 import javax.swing.JOptionPane;
-import jogodosanimais.entidade.Regra;
+import jogodosanimais.logica.Animal;
+import jogodosanimais.logica.Tree;
 import jogodosanimais.tela.Tela;
 
 /**
@@ -14,11 +15,12 @@ import jogodosanimais.tela.Tela;
  * @author wlademir
  */
 public class JogoDosAnimais {
+
     public static void main(String[] args) {
-        Regra regra = new Regra();
-        while (Tela.dialogApresentacaoInicial()== JOptionPane.OK_OPTION) 
-        regra.processo(regra.getRoot());
+        Tree root = new Tree(new Animal("Tubarão"), new Animal("Macaco"), "vive na agua");
+        while (Tela.dialogApresentacaoInicial() == JOptionPane.OK_OPTION) {
+            root.adicionaNaArvora();
+        }
     }
 
 }
-
